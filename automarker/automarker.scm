@@ -22,9 +22,9 @@
 ;; Tests format:
 ;; (test_collection_1 test_collection_2, etc)
 
-(load "automarker/Srfi1.scm")
-
 ;; Load the spec and the program to test from the command line inputs
+
+(load "automarker/helper_fn.scm")
 
 (define spec (cadr (command-line)))
 (define prog (list-ref (command-line) 2))

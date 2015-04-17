@@ -1,6 +1,5 @@
 ;; Comparison function checks that given output is exactly equal to expected output
-(load "automarker/Srfi1.scm")
-
+(load "automarker/helper_fn.scm")
 (define (exactly-equal expected-output)
     (lambda (actual-output) (equal? actual-output expected-output))
 )
